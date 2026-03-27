@@ -1,0 +1,21 @@
+.container{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards_container{
+    border: 1px solid red;
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .cards_container{
+        width: 50vw;
+    }
+}

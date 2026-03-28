@@ -1,18 +1,86 @@
-.card{
+
+.card {
+    position: relative;
     width: 100%;
     height: 100%;
     max-height: 200px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.90);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer; }
+
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.14);
 }
+.card[data-emotion="Feliz"] {
+    background-image:
+      radial-gradient(circle at center, var(--happy-glow), transparent 15%);
+  }
+  
+  .card[data-emotion="Triste"] {
+    background-image:
+            radial-gradient(circle at center, var(--sad-glow), transparent 15%);
+  }
+  
+  .card[data-emotion="Enfadada"] {
+    background-image:
+            radial-gradient(circle at center, var(--angry-glow), transparent 15%);
+  }
+  
+  .card[data-emotion="Ansiosa"] {
+    background-image:
+            radial-gradient(circle at center, var(--anxious-glow), transparent 15%);
+  }
+  
+  .card[data-emotion="Sola"] {
+    background-image:
+            radial-gradient(circle at center, var(--lonely-glow), transparent 15%);
+  }
+  
+  .card[data-emotion="Agradecida"] {
+    background-image:
+            radial-gradient(circle at center, var(--grateful-glow), transparent 15%);
+  }
+
+  .card[data-emotion="Feliz"]:hover {
+      border: 2px solid #fbbf24;
+  }
+
+  .card[data-emotion="Triste"]:hover {
+      border: 2px solid #1976d2;
+  }
+
+  .card[data-emotion="Enfadada"]:hover {
+      border: 2px solid #f44336;
+  }
+
+  .card[data-emotion="Ansiosa"]:hover {
+      border: 2px solid #7b1fa2;
+  }
+
+  .card[data-emotion="Sola"]:hover {
+      border: 2px solid #546e7a;
+  }
+
+  .card[data-emotion="Agradecida"]:hover {
+      border: 2px solid #388e3c;
+  }
+
+  @media screen and (max-width: 425px) {
+    .card{
+        h2{
+            font-size: 18px
+        }
+    }
+  }
+ 

@@ -2,7 +2,7 @@ export const happyPhrases: string[] = [
   "Que te conceda lo que tu corazón desea; que haga que se cumplan todos tus planes.- Salmos 20:4",
   "Que el dios de la esperanza los llene de toda alegría y paz a ustedes que creen en él, para que rebosen de esperanza por el poder del Espíritu Santo.- Romanos 15:13",
   "Ustedes lo aman a pesar de no haberlo visto, y aunque no lo ven ahora, creen en él y se alegran con un gozo tan glorioso, pues están obteniendo la meta de su fe, que es su salvación.- 1 Pedro 1:8-9",
-  "Luego Nohemias añadi+o: 'Ya pueden irse. Coman bien, tomen bebidas dulces y compartan su comida con quienes no tengan nada, porque este día ha sido consagrado a nuestro Señor. No se entristezcan, porque la alegría del Señor es su fuerza'.- Nehemias 8:10",
+  "Luego Nohemias añadió: 'Ya pueden irse. Coman bien, tomen bebidas dulces y compartan su comida con quienes no tengan nada, porque este día ha sido consagrado a nuestro Señor. No se entristezcan, porque la alegría del Señor es su fuerza'.- Nehemias 8:10",
   "Volverán los rescatados del Señor y entrarán en Sión con cantos de júbilo; su corona será el gozo eterno. Se llenarán de regocijo y alegría, y se apartarán de ellos el dolor y los quejidos.- Isaías 35:10",
   "Deléitate en el Señor, y él te concederá los deseos de tu corazón.- Salmos 37:4",
   "Su señor respondió: 'Muy bien, siervo bueno y fiel. En lo poco has sido fiel; te pondré a cargo de mucho más. Ven a compartir la felicidad de tu señor'.- Mateo 25:21",
@@ -37,6 +37,43 @@ export const sadPhrases: string[] = [
 ];
 
 export const angryPhrases: string[] = [
+  "Por eso, confiénse unos a otros sus pecados y oren unos por otros para que sean sanados. La oración del justo es poderosa y eficaz.- Santiago 5:16",
+  "Busquen la paz con todos y la santidad, sin la cual nadie verá al Señor.- Hebreos 12:14",
+  "No nos cansemos de hacer el bien, porque a su debido tiempo cosecharemos si no nos damos por vencidos.- Gálatas 6:9",
+  "Así que, mis queridos hermanos, como han obedecido siempre, no solo en mi presencia, sino mucho más ahora en mi ausencia, pongan toda su empeño en completar su salvación con temor y temblor.- Filipenses 2:12",
+  "Que se aparte del mal y haga el bien; que busque la paz y la siga.- Salmos 34:14",
+  "El que es iracundo provoca contiendas, pero el que es paciente apacigua las peleas.- Proverbios 15:18",
+  "Quiero, pues, que en todas partes los hombres oren, levantando las manos al cielo con santidad, sin enojos ni contiendas.- 1 Timoteo 2:8",
+  "Mis queridos hermanos, tengan presente esto: Todos deben estar listos para escuchar, y ser lentos para hablar y para enojarse.- Santiago 1:19",
+  "Huye de las pasiones juveniles, y sigue la justicia, la fe, el amor y la paz, junto con los que invocan al Señor con un corazón limpio.- 2 Timoteo 2:22",
+  "La respuesta amable calma la ira, pero la agresiva provoca el enojo.- Proverbios 15:1",
+  "El que es paciente muestra gran inteligencia; el que es agresivo muestra mucha insensatez.- Proverbios 14:29",
+  "Pero tú, Señor, eres Dios compasivo y misericordioso, lento para la ira y abundante en amor y fidelidad.- Salmos 86:15",
+  "No permitas que el enojo domine tu espirítu, porque el enojo se aloja en lo íntimo de los necios.- Eclesiastés 7:9",
+  "Refrena la ira, deja la furia, no te enojes, pues esto conduce al mal.- Salmos 37:8",
+  "El hombre iracundo provoca peleas, el hombre violento multiplica sus crimenes.- Proverbios 29:22",
+  "Pero ahora abandonen también todo esto: enojo, ira, malicia, calumnia y lenguaje obsceno.- Colosenses 3:8",
+];
+
+export const anxiousPhrases: string[] = [
+  "El señor es mi luz y mi salvación, ¿a quién temeré? El Señor es la fortaleza de mi vida, ¿de quién tendré miedo?- Salmos 27:1",
+  "Al de carácter firme lo guardarás en perfecta paz, porque en ti confía.- Isaías 26:3",
+  "Así que no temas, porque yo estoy contigo; no te angusties, porque yo soy tu dios. Te fortaleceré y te ayudaré; te sostendré con la diestra de mi justicia.- Isaías 41:10",
+  "Cuando en mi la angustía iba en aumento, tu consuelo llenaba mi alma de alegría.- Salmos 94:19",
+  "Pues Dios no nos ha dado un espíritu de timidez, sino de poder, de amor y de dominio propio.- 2 Timoteo 1:7",
+  "Pero los que confían en el Señor renovarán sus fuerzas; volarán como las águilas: correrán y no se fatigarán, caminarán y no se cansarán.- Isaías 40:31",
+  "Digan a los de corazón temeroso: 'Sean fuertes, no teman. Miren a su alrededor y vean que el Señor viene a salvarlos'.- Isaías 35:4",
+  "Confía en el Señor de todo corazón y no te apoyes en tu propia inteligencia. Reconocelo en todos tus caminos, y él allanará tus sendas.- Proverbios 3:5-6",
+  "No se preocupen por nada; en cambio, oren por todo. Díganle a Dios lo que necesitan y agradezcanle por todo lo que ha hecho.- Filipenses 4:6",
+  "Así que podemos decir con toda confianza: 'El Señor es quien me ayuda; no tenfo miedo. ¿Qué me puede hacer un simple mortal?'- Hebreos 13:6",
+  "Cuando siento miedo, pongo en ti mi confianza.- Salmos 56:3",
+  "Busqué añ Señor y él me respondió; me libró de todos mis temores.- Salmos 34:4",
+  "Aun si voy por valles tenebrosos, no temeré ningún mal, porque tú estás a mi lado; tu vara y tu bastón me reconfortan.- Salmos 23:4",
+  "Depositen en él toda ansiedad, porque él cuida de ustedes.- 1 Pedro 5:7",
+  "Entrégale tus afanes al Señor, y él te sostendrá; nunca permitirá que el justo caiga.- Salmos 55:22",
+];
+
+export const lonelyPhrases: string[] = [
   "Él enjuagará toda lágrima de sus ojos, y ya no habrá muerte, ni tristeza, ni llanto, ni dolor, porque las cosas anteriores han pasado.- Apocalipsis 21:4",
   "Ya te lo he ordenado: sé fuerte y valiente; no tengas miedo ni te acobardes, porque el Señor tu dios estará contigo dondequiera que vayas.- Josué 1:9",
   "El Señor mismo marchará al frente de ti y estará contigo; nunca te dejará ni te abandonará. No temas ni te desanimes.- Deuteronomio 31:8",
@@ -54,8 +91,21 @@ export const angryPhrases: string[] = [
   "Los que con lágrimas siembran, con regocijo cosechan.- Salmos 126:5",
 ];
 
-export const anxiousPhrases: string[] = ["ansiosa"];
-
-export const lonelyPhrases: string[] = ["sola"];
-
-export const gratefulPhrases: string[] = ["agradecida"];
+export const gratefulPhrases: string[] = [
+  "Den gracias al Señor, porque él es bueno; su amor perdura para siempre.- 1 Crónicas 16:34",
+  "Entren por sus puertas con acción de gracias, y por sus atrios con alabanza. Denle gracias y alaben su nombre.- Salmos 100:4",
+  "¡Aleluya! Den gracias al Señor, porque él es bueno; su amor perdura para siempre.- Salmos 106:1",
+  "Y todo lo que hagan, de palabra o de obra, háganlo en el nombre del Señor Jesús, dando gracias a Dios Padre por medio de él.- Colosenses 3:17",
+  "Den gracias a Dios en toda situación, porque esta es su voluntad para ustedes en Cristo Jesús.- 1 Tesalonicenses 5:18",
+  "El Señor es mi fuerza y mi escudo; mi corazón en él confía; de él recivo ayuda. Mi corazón salta de alegría, y con mi cántico le daré gracias.- Salmos 28:7",
+  "¡Den gracias al Señor, porque él es bueno; su amor perdura para siempre!- Salmos 107:1",
+  "Toda buena dádiva y toda perfecta bendición descienden de lo alto, donde esta el Padre que cre+o las luces, y no cambia como las sombras.- Santiago 1:17",
+  "¡Alabaré al Señor por su justicia! ¡Al nombre del Señor Altísimo cantaré salmos!- Salmos 7:17",
+  "Que gobierne en sus corazones la paz de Cristo, a la que fueron llamados en un solo cuerpo. Y sean agradecidos.- Colosenses 3:15",
+  "Dedíquense a la oración; perseveren en ella con agradecimiento.- Colosenses 4:2",
+  "Lleguemos ante él con acción de gracias; aclamémoslo con cánticos. Porque el Señor es el gran Dios, el gran Rey por encima de todos los dioses.- Salmos 95:2-3",
+  "Den gracias al Señor porque él es bueno; su gran amor perdura para siempre.- Salmos 118:1",
+  "Bendeciré al Señor en todo tiempo; lo alabarán siempre mis labios.- Salmos 34:1",
+  "Dando siempre gracias a Dios el Padre por todo, en el nombre de nuestro Señor Jesucristo.- Efesios 5:20,",
+  "Den gracias al Señor, porque él es bueno; su amor perdura para siempre.- Salmos 136:1",
+];

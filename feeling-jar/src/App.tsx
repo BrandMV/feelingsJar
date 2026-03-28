@@ -38,9 +38,9 @@ function App() {
 
   return (
     <>
+      <h1 className="title">Léeme cuando te sientas...</h1>
       {!selectedEmotion && (
         <div className="container">
-          <h1>Léeme cuando te sientas...</h1>
           <div className="cards_container">
             {feelings.map((feeling) => (
               <Card
@@ -57,8 +57,12 @@ function App() {
         <Jar
           phrases={phraseByEmotion[selectedEmotion]}
           emotion={selectedEmotion}
+          onClickBack={() => setSelectedEmotion(null)}
         />
       )}
+      <div className="footer">
+        <p>With ❤️ by BrandMV</p>
+      </div>
     </>
   );
 }

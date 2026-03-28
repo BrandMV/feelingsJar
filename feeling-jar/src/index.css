@@ -1,5 +1,32 @@
+:root {
+    --bg-start: #dbeafe;
+    --bg-end: #93c5fd;
+
+    --card-surface: rgba(255, 255, 255, 0.78);
+    --card-border: rgba(255, 255, 255, 0.65);
+    --card-shadow: rgba(0, 0, 0, 0.10);
+
+    --happy-glow: rgba(255, 222, 66, 0.18);
+        --sad-glow: rgba(58, 154, 255, 0.20);
+        --angry-glow: rgba(219, 26, 26, 0.18);
+        --anxious-glow: rgba(155, 194, 100, 0.18);
+        --lonely-glow: rgba(172, 186, 196, 0.18);
+        --grateful-glow: rgba(240, 117, 174, 0.20);
+    
+    --happy-papers-color: #FFDE42;
+    --sad-papers-color: #3A9AFF;
+    --angry-papers-color: #DB1A1A;
+    --anxious-papers-color: #9BC264;
+    --lonely-papers-color: #ACBAC4;
+    --grateful-papers-color: #F075AE;
+
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html{
+  background: linear-gradient(to bottom right, #dbeafe, #93c5fd);
+font-family: "Google Sans", sans-serif;
 }

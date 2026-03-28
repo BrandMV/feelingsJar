@@ -1,10 +1,12 @@
 import { useState, useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import "./jar.css";
+import { HomeIcon } from "../HomeIcon";
 
 interface JarProps {
   phrases: string[];
   emotion: string;
+  onClickBack?: () => void;
 }
 type Paper = {
   id: number;
@@ -24,23 +26,23 @@ const phrases: string[] = [
 ];
 
 const emotionColorMap: Record<string, string> = {
-  Feliz: "#ffeb3b",
-  Triste: "#90caf9",
-  Enfadada: "#f44336",
-  Ansiosa: "#ba68c8",
-  Sola: "#6c757d",
-  Agradecida: "#81c784",
-  default: "#ffffff",
+  Feliz: "var(--happy-papers-color)",
+  Triste: "var(--sad-papers-color)",
+  Enfadada: "var(--angry-papers-color)",
+  Ansiosa: "var(--anxious-papers-color)",
+  Sola: "var(--lonely-papers-color)",
+  Agradecida: "var(--grateful-papers-color)",
+  default: "var(--white, #ffffff)",
 };
 
-const Jar: React.FC<JarProps> = ({ phrases, emotion }) => {
+const Jar: React.FC<JarProps> = ({ phrases, emotion, onClickBack }) => {
   const [isShaking, setIsShaking] = useState(false);
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [selectedPhrase, setSelectedPhrase] = useState<string | null>(null);
   const paperColor = emotionColorMap[emotion] ?? emotionColorMap.default;
 
   const papers = useMemo<Paper[]>(() => {
-    return Array.from({ length: 50 }).map((_, i) => ({
+    return Array.from({ length: phrases.length }).map((_, i) => ({
       id: i,
       x: Math.random() * 80 + 45,
       y: Math.random() * 60 + 65,
@@ -73,7 +75,7 @@ const Jar: React.FC<JarProps> = ({ phrases, emotion }) => {
           <motion.div
             key={selectedPhrase}
             initial={{ opacity: 0, y: -100, scale: 0.8 }}
-            animate={{ opacity: 1, y: -200, scale: 1 }}
+            animate={{ opacity: 1, y: -300, scale: 1 }}
             exit={{ opacity: 0, y: -200, scale: 0.8 }}
             transition={{ duration: 0.7 }}
             className="phraseContainer"
@@ -193,7 +195,10 @@ const Jar: React.FC<JarProps> = ({ phrases, emotion }) => {
         />
       </motion.svg>
 
-      {!selectedPhrase && <p className="hint">Toca el frascossss</p>}
+      {!selectedPhrase && <p className="hint">Toca el frasco</p>}
+      <p className="hintBack" onClick={onClickBack}>
+        <HomeIcon width={24} height={24} />
+      </p>
     </div>
   );
 };

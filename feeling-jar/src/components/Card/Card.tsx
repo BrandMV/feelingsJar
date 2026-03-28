@@ -11,7 +11,7 @@ const Card: React.FC<CardProps> = ({ title, emotion, onSelect }) => {
   return (
     <div
       className="card"
-      data-emotion={emotion}
+      data-emotion={title}
       onClick={() => onSelect && onSelect(title)}
     >
       <h2>{title}</h2>

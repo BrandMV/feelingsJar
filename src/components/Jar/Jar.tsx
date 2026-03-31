@@ -75,7 +75,7 @@ const Jar: React.FC<JarProps> = ({ phrases, emotion, onClickBack }) => {
           <motion.div
             key={selectedPhrase}
             initial={{ opacity: 0, y: -100, scale: 0.8 }}
-            animate={{ opacity: 1, y: -300, scale: 1 }}
+            animate={{ opacity: 1, y: -190, scale: 1 }}
             exit={{ opacity: 0, y: -200, scale: 0.8 }}
             transition={{ duration: 0.7 }}
             className="phraseContainer"

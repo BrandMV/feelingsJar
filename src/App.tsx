@@ -32,7 +32,6 @@ function App() {
   const [selectedEmotion, setSelectedEmotion] = useState<string | null>(null);
 
   const onSelectFeeling = (emotion: string) => {
-    console.log(`Selected emotion: ${emotion}`);
     setSelectedEmotion(emotion);
   };
 
